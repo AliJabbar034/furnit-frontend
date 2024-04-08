@@ -5,27 +5,27 @@ import Footer from "../layout/Footer";
 
 
 
-const Layout:React.FC = ()=>{
-return (
-    <div className=" flex flex-1 flex-col h-screen justify-between  space-y-8">
-       
-<div className="">
-<div className="">
-    <Header/>
-</div>
+const Layout: React.FC = () => {
+    return (
+        <div className=" flex flex-1 flex-col h-screen justify-between  space-y-8">
 
-<div>
-    <Outlet/>
-</div>
-</div>
+            <div className="">
+                <div className="">
+                    <Header />
+                </div>
 
-<div className=" w-[100%]">
-  <Footer/>
-</div>
+                <div>
+                    <Outlet />
+                </div>
+            </div>
+
+            <div className=" w-[100%]">
+                <Footer />
+            </div>
 
 
-    </div>
-)
+        </div>
+    )
 }
 
 

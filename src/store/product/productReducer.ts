@@ -2,32 +2,32 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 
 
 interface Product {
-    _id:string,
-    title:string,
-    description:string,
-    price:number,
-    images:string[],
-    averageRating:number,
-    colors:string[]
-  }
-
-interface  ProductState  {
-  product:Product[]
+    _id: string,
+    title: string,
+    description: string,
+    price: number,
+    images: string[],
+    averageRating: number,
+    colors: string[]
 }
 
-const initialState:ProductState={
-    product:[]
+interface ProductState {
+    product: Product[]
+}
+
+const initialState: ProductState = {
+    product: []
 }
 
 
 const productSlice = createSlice({
-    name:"product",
+    name: "product",
     initialState,
-    reducers:{
-        getAllProduct:(state, action:PayloadAction<Product[]>)=>{
+    reducers: {
+        getAllProduct: (state, action: PayloadAction<Product[]>) => {
             return {
                 ...state,
-                product:action.payload
+                product: action.payload
 
             }
         }

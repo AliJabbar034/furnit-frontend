@@ -4,10 +4,11 @@
 
 
 
-body{
+body {
     font-family: 'Poppins';
 }
-.coverIMage{
+
+.coverIMage {
     background-image: url("../public/assets/shopmain.png");
     background-repeat: no-repeat;
     background-size: cover
