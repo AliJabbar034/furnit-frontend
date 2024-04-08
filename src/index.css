@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    font-family: 'Poppins';
+}
+.coverIMage{
+    background-image: url("../public/assets/shopmain.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
